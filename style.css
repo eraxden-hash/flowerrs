@@ -8,8 +8,8 @@ body {
 .container {
   position: absolute;
   left: 30%;
-  top: 20%;
-  transform: translate(-30%, -20%);
+  top: 27%;
+  transform: translate(-30%, -27%);
 }
 
 .petals > div {
@@ -288,6 +288,7 @@ body {
   background: linear-gradient(to top, #228b22 60%, #6ee36e 100%);
   transform: rotate(-5deg);
 }
+
 
 
 
