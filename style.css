@@ -12,54 +12,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.glass {
-  height: 350px;
-  width: 200px;
-  background: #122139;
-  border-radius: 300px 300px 0px 0px;
-}
-.glass:before {
-  content: "";
-  height: 10px;
-  width: 10px;
-  transform-origin: center;
-  border: 10px solid #122139;
-  border-radius: 100%;
-  position: absolute;
-  left: 87px;
-  top: -25px;
-}
-.glass:after {
-  content: "";
-  position: absolute;
-  height: 15px;
-  width: 250px;
-  background: #a52a2a;
-  top: 100%;
-  left: -13%;
-}
-
-.shine {
-  width: 12px;
-  height: 140px;
-  background: white;
-  opacity: 0.2;
-  position: absolute;
-  left: 85%;
-  top: 80px;
-  border-radius: 100px;
-  z-index: 10;
-}
-.shine:before {
-  content: "";
-  width: 12px;
-  height: 20px;
-  position: absolute;
-  background: white;
-  top: 160px;
-  border-radius: 100px;
-}
-
 .petals > div {
   position: absolute;
   background: #d52d58;
@@ -301,4 +253,38 @@ body {
     top: 335px;
     opacity: 0;
   }
+}
+
+.grass {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 60px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  pointer-events: none;
+}
+.grass-blade {
+  width: 6px;
+  height: 40px;
+  margin: 0 2px;
+  background: linear-gradient(to top, #0a3d0a 60%, #3cb43c 100%);
+  border-radius: 0 0 12px 12px;
+  transform: rotate(-10deg);
+  opacity: 0.8;
+  box-shadow: 0 2px 6px #0a3d0a;
+}
+.grass-blade:nth-child(even) {
+  height: 30px;
+  background: linear-gradient(to top, #145214 60%, #4fd34f 100%);
+  transform: rotate(10deg);
+}
+.grass-blade:nth-child(3n) {
+  height: 50px;
+  background: linear-gradient(to top, #228b22 60%, #6ee36e 100%);
+  transform: rotate(-5deg);
 }
