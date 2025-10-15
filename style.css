@@ -1,5 +1,5 @@
 body {
-  height: 200%;
+  height: 10%;
   width: 100%;
   background: #080f1a;
   overflow: hidden;
@@ -302,4 +302,5 @@ body {
     opacity: 0;
   }
 }
+
 
