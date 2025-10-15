@@ -259,7 +259,7 @@ body {
   position: absolute;
   left: 40%;
   bottom: 36%;
-  transform: translateX(-50%);
+  transform: translateX(-30%);
   width: 300px;
   height: 60px;
   z-index: -1;
@@ -269,7 +269,7 @@ body {
   pointer-events: none;
 }
 .grass-blade {
-  width: 6px;
+  width: 20px;
   height: 40px;
   margin: 0 2px;
   background: linear-gradient(to top, #0a3d0a 60%, #3cb43c 100%);
@@ -288,6 +288,7 @@ body {
   background: linear-gradient(to top, #228b22 60%, #6ee36e 100%);
   transform: rotate(-5deg);
 }
+
 
 
 
